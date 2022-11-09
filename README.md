@@ -30,7 +30,7 @@ Esto nos permite llamar a la función y obtener el ownership.
 
 CONSEJO: Podemos consultar el ABI del contrato y llamar a las funciones directamente desde la consola del navegador.
 
-![](./console.png)
+![](./Console.png)
 
 ----------
 ----------
