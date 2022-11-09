@@ -12,11 +12,11 @@ _English version down below_
 
 ## Para encontrar la solución, primero debemos conocer el problema
 
-Hasta la vesión 0.4.21 de Solidity, el constructor (función que se ejecuta una sola vez cuando el contrato es desplegado) se definía como una con el mismo nombre que el contrato, esto hacía que no fuese posible llamar a está función una vez el contrato había sido desplegado.
+Hasta la vesión 0.4.21 de Solidity, el constructor (función que se ejecuta una sola vez cuando el contrato es desplegado) se definía como una función con el mismo nombre que el contrato, esto hacía que no fuese posible llamar a está función una vez el contrato había sido desplegado.
 
-Esto causó bastantes problemas de seguridad, ya que, si por cualquier razón se cambiaba el nombre del constrato, el método (función) que antes funcionaba como constructor, dejaba de hacerlo y comenzaba a funcionar como un método normal, lo que permitia llamarlo aunque el contrato ya hubiese sido desplegado.
+Esto causó bastantes problemas de seguridad, ya que, si por cualquier razón se cambiaba el nombre del contrato, el método (función) que antes funcionaba como constructor, dejaba de hacerlo y comenzaba a funcionar como un método normal, lo que permitia llamarlo aunque el contrato ya hubiese sido desplegado.
 
-Este es exactamente el problema de este nivel, podemos ver que la fución _Fal1out()_ comentada como _/* constructor */_ es lévemente diferente al nombre del contrato.
+Este es exactamente el problema de este nivel, podemos ver que el nombre de la fución _Fal1out()_ comentada como _/* constructor */_ es lévemente diferente al nombre del contrato.
 
 	contract Fallout {
 -----------------------------
@@ -43,7 +43,7 @@ CONSEJO: Podemos consultar el ABI del contrato y llamar a las funciones directam
 
 ## To find the solution, we must first know the problem.
 
-Until Solidity version 0.4.21, the constructor (function that is executed only once when the contract is deployed) was defined as one with the same name as the contract, so it was not possible to call this function once the contract had been deployed.
+Until Solidity version 0.4.21, the constructor (function that is executed only once when the contract is deployed) was defined as function with the same name as the contract, so it was not possible to call this function once the contract had been deployed.
 
 This caused quite a few security problems, since, if for any reason the name of the contract was changed, the function that previously worked as a constructor, stopped working as a constructor and started working as a normal one, allowing to call it even if the contract had already been deployed.
 
