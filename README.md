@@ -2,7 +2,7 @@ _English version down below_
 
 # Contract
 
-![](./fallout.png)
+![](./Fallout.png)
 
 # Solución
 
@@ -61,4 +61,4 @@ This allows us to call the function and get the ownership.
 
 TIP: We can check the ABI of the contract and call the functions directly from the browser console.
 
-![](./console.png)
+![](./Console.png)
